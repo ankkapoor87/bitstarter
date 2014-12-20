@@ -1,11 +1,15 @@
 var express = require('express')
 var app = express();
 
+var buf=fs.readFileSync('/htmlfile.html');
+var str=buf.toString();
+
 app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
-  response.send('I think I got this now')
+  response.send(str)
+//response.send('I think I got this now')
 })
 
 app.listen(app.get('port'), function() {
