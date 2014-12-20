@@ -8,7 +8,8 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
- response.send('I think I got this now')
+ response.send(fs.readFileSync('\htmlfile.html').toString())
+//'I think I got this now')
 })
 
 app.listen(app.get('port'), function() {
