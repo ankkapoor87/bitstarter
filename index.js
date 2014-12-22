@@ -9,7 +9,9 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
- response.send(fs.readFileSync('\htmlfile.html').toString())
+ var buf=fs.readFileSync('\htmlfile.html');
+ var str=buf.toString();
+ response.send(str)
 //'I think I got this now')
 })
 
