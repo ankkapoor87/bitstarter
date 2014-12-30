@@ -4,30 +4,9 @@
     <meta charset="utf-8">
     <title>My First Website</title>
     <meta name"viewport" content = "width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap-responsive.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <style type="text/css">
-      
-      /* Large desktop */
-      @media (min-width: 980px) {
-         body {
-          padding-top: 60px;
-         }
-         .linediv-l {
-            border-right: 1px white solid;
-         }
-         .linediv-r {
-            border-left: 1px white solid;
-         }
-      }
-      
-      /* landscape phones and down */
-      @media (max-width: 480px) {
-        .copy {
-           padding: 2.5% 10%;
-        }
-
       body {
       padding-top: 20px;
       padding-bottom:40px;
@@ -62,8 +41,6 @@
 </head>
 <body>
 
-  <!-- Mobile friendly navbar adopted from example. -->
-  <!-- http:>
   <div class = "navbar navbar-inverse navbar-fixed-top">
     <div class = "navbar-inner">
       <div class="container">
