@@ -237,3 +237,9 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
+/* Text at the center of a row */
+text-middle {
+    text-align:center;
+    vertical-align:middle;
+}
